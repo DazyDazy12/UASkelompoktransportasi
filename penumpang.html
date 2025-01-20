@@ -10,17 +10,36 @@
     <title>Penumpang</title>
 </head>
 <body>
-    <div class="heas">
-        <img src="img/bgpenumpang.png" alt="" style="height: 344px;">
-        <ul style="padding: 20px; background-color:blue;" class="nav justify-content-end">
-            <li class="nav-item">
-              <a style="font-weight: bold; font-size: large;color: white;" class="nav-link active" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a style="font-weight: bold;color: white; " class="nav-link" href="#">Login</a>
-            </li>
-          </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Beranda</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://booking.kai.id/auth/login">Login <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://preorder.reska.co.id/pemesanan">Preorder</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Angkutan
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="penumpang.html">Angkutan Penumpang</a>
+          <a class="dropdown-item" href="barang.html">Angkutan Barang</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Cari" aria-label="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Cari</button>
+    </form>
+  </div>
+</nav>
 
     <div class="card" style="margin: 20px;">
       <div class="card-header">
